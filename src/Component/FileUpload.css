@@ -1,0 +1,56 @@
+/* FileUpload.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.new {
+  margin-bottom: 20px;
+}
+
+.file-upload-container {
+  border: 2px dashed #cccccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.highlight {
+  border-color: #007bff;
+}
+
+.file-upload-button {
+  margin-right: 10px;
+}
+
+.Node {
+  margin-top: 20px;
+}
+
+/* Styling for the progress bar */
+progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+/* Styling for the progress bar fill */
+progress[value] {
+   appearance: none;
+  -webkit-appearance: none;
+  border: none; 
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: aqua;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #007bff;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #007bff;
+}

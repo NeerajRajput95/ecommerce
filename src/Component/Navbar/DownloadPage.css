@@ -1,0 +1,72 @@
+
+/* .excel-grid {
+    border-collapse: collapse;
+} */
+
+/* .excel-row {
+    display: flex;
+} */
+ /* .excel-cell {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+} */
+
+
+
+/* .excel-grid {
+    border-collapse: collapse;
+} */
+
+
+/* .excel-row {
+    display: flex;
+} */
+
+/* .excel-cell {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+} */
+.grid-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top:30px ;
+}
+
+.excel-grid {
+    width: max-content;
+}
+
+.excel-row {
+    display: flex;
+}
+
+.excel-cell {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.search-label {
+    color: blue;
+    margin-right: 10px; /* Adjust spacing between label and input */
+}
+
+.header-row {
+    position: sticky;
+    top: 0;
+    /* background-color: #fff; */
+    z-index: 1;
+}
+
+.header-cell {
+    background-color: #f0f0f0;
+}
+
+.body {
+    overflow-y: auto;
+    max-height: 400px; /* Adjust as needed */
+}
+

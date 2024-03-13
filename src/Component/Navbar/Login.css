@@ -1,0 +1,73 @@
+/* Login.css */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top:100px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: #007bff;
+}
+h4{
+  text-align: center;
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #ff0000;
+  font-size: 14px;
+}
+
+button,
+input[type="text"],
+input[type="password"] {
+  outline: none;
+}
+
+button:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.button-container{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+}

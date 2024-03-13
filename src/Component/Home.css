@@ -1,0 +1,17 @@
+.midSection{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.select{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* width: 100%; */
+    padding: 20px;
+    align-items: center;
+    gap:20px
+}

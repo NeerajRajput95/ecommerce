@@ -1,0 +1,33 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+  }
+  
+  .product h2 {
+    margin-top: 0;
+  }
+  
+  .product img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px
+  }

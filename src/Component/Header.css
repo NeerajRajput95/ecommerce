@@ -1,0 +1,80 @@
+/* Header.css */
+header {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h1 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Increase font size for the title */
+}
+
+.login-container a {
+  color: white;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Increase margin for better separation */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Increase font size for navigation links */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the user icon */
+.link-icon {
+  color: white;
+  font-size: 24px; /* Adjust size as needed */
+  margin-left: 20px; /* Add margin for spacing */
+}
