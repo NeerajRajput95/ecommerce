@@ -9,19 +9,24 @@ import { PrimeReactProvider } from 'primereact/api';
 import 'primeflex/primeflex.css';  
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import Sidebar from './Sidebar/Sidebar'
 
 function Home() {
   return (
-    <div>
+    <div className=''>
       <Header/>
+      <Sidebar/>
       <div className='midSection'>
         <div className='select'>
       <SelectItem/>
       <PrimeReactProvider>
       <MultiSelect/>
       </PrimeReactProvider>
+     
       </div>
+      <div className='fileupload'> 
       <FileUpload/>
+       </div>
       </div>
     </div>
   )

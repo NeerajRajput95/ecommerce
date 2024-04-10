@@ -1,14 +1,19 @@
 /* Header.css */
 header {
-  background-color: cornflowerblue;
-  color: white;
+  background-color:deepskyblue;
+  height: 100px;
+  color:white;
   padding: 10px 20px;
+  border-radius: 5px;
+
 }
 
 .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
+  
 }
 
 .title h1 {
@@ -29,9 +34,13 @@ header {
   justify-content: space-between;
   margin-top: 10px;
 }
+nav{
+  margin-right: 20px;
+  gap:10px
+}
 
 nav ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin: 0;
   padding: 0;
 }
@@ -39,12 +48,27 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 20px; /* Increase margin for better separation */
+ 
+
 }
+/* nav ul li:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  transition: background-color 0.3s;
+  background-color: aliceblue;
+}  */
+
 
 nav ul li a {
-  color: white;
+  color:white;
   text-decoration: none;
   font-size: 18px; /* Increase font size for navigation links */
+
+}
+nav ul li a:hover {
+  color: black; 
+  
 }
 
 .search-container {

@@ -291,7 +291,7 @@ const FileUpload = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container-file'>
       <div className='new'>
         <div className={`file-upload-container ${isDragging ? 'highlight' : ''}`}
           onDragEnter={handleDragEnter}
@@ -308,8 +308,10 @@ const FileUpload = () => {
           />
           <p>{selectedFile ? `${selectedFile.name}` : "Drop File Here"}</p>
         </div>
+        
         <button className="file-upload-button" onClick={handleClick}>Choose File</button>
         <button className="file-upload-button" onClick={handleUpload}>Submit</button>
+       
         {console.log("wwwwwwwwwww",uploadProgress)}
         {uploadProgress > 0 && uploadProgress < 100 && (
   <div className="progress-container">
@@ -327,7 +329,7 @@ const FileUpload = () => {
           onChange={(e) => setRememberMe(e.target.checked)}
         />
       </div>
-      <button className="file-upload-button" onClick={handleDownload}>Prepare Command</button>
+      <button className="prepare-command" onClick={handleDownload}>Prepare Command</button>
     </div>
   );
 };

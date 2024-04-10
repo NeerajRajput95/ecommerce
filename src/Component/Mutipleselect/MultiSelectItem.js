@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import ReactSelect, { components, InputAction } from "react-select";
+import ReactSelect, { components } from "react-select";
 
 const MultiSelectItem = (props) => {
   const [selectInput, setSelectInput] = useState("");

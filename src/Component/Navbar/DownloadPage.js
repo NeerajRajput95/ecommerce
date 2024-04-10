@@ -346,7 +346,7 @@ import { MultiSelect } from 'primereact/multiselect';
 import { Tag } from 'primereact/tag';
 import { TriStateCheckbox} from 'primereact/tristatecheckbox';
 import { CustomerService } from './CustomerService';
-import { InputNumber } from 'primereact/inputnumber';
+// import { InputNumber } from 'primereact/inputnumber';
 
 // The rule argument should be a string in the format "custom_[field]".
 FilterService.register('custom_activity', (value, filters) => {
@@ -401,6 +401,8 @@ const DownloadPage=()=> {
 
             case 'renewal':
                 return null;
+            default:
+                return null;    
         }
     };
 
@@ -507,16 +509,16 @@ const DownloadPage=()=> {
         return <TriStateCheckbox value={options.value} onChange={(e) => options.filterApplyCallback(e.value)} />;
     };
 
-    const activityRowFilterTemplate = (options) => {
-        const [from, to] = options.value ?? [null, null];
+    // const activityRowFilterTemplate = (options) => {
+    //     const [from, to] = options.value ?? [null, null];
 
-        return (
-            <div className="flex gap-1">
-                <InputNumber value={from} onChange={(e) => options.filterApplyCallback([e.value, to])} className="w-full" placeholder="from" />
-                <InputNumber value={to} onChange={(e) => options.filterApplyCallback([from, e.value])} className="w-full" placeholder="to" />
-            </div>
-        );
-    };
+    //     return (
+    //         <div className="flex gap-1">
+    //             <InputNumber value={from} onChange={(e) => options.filterApplyCallback([e.value, to])} className="w-full" placeholder="from" />
+    //             <InputNumber value={to} onChange={(e) => options.filterApplyCallback([from, e.value])} className="w-full" placeholder="to" />
+    //         </div>
+    //     );
+    // };
 
     const header = renderHeader();
 

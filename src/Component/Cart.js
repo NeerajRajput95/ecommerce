@@ -13,16 +13,17 @@ function Cart() {
     dispatch(removeFromCart(productId));
   };
 
-  const calculateTotal = () => {
-    let totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
-    setTotal(totalPrice);
-  };
-
   useEffect(() => {
+    const calculateTotal = () => {
+      let totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
+      setTotal(totalPrice);
+    };
+  
     calculateTotal();
     // Update total amount in Redux store when cartItems change
     dispatch(setTotalAmount(total));
-  }, [cartItems]); // Update total whenever cartItems change
+  }, [cartItems, dispatch, setTotal, total]); // Update total whenever cartItems change
+  
 
   return (
     <div>

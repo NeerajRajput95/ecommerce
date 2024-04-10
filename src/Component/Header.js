@@ -9,19 +9,22 @@ const Header = () => {
   return (
     <header>
       <div className='title'>
-        <h1 className=''>CMD Preparation Tool</h1>       
-          <Link to="/login">
-          <FaUser/>
-          </Link>  
-      </div>
-      <div className='bar'>
+        <h1 className=''><Link to="/">CMD Preparation Tool</Link></h1> 
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">Products</Link></li>
             <li><Link to="/password">passwordGen</Link></li>
           </ul>
-        </nav>
+        </nav>  
+         <Link to="/login">
+          <FaUser/>
+          </Link>      
+          
+      </div>
+      <div className='bar'>
+        
+       
        
         <div className="search-container">
           {/* <input type="text" placeholder="Search..." /> */}
